@@ -20,6 +20,7 @@ export default function handleFormSubmit(event) {
   function downloadFormContent(formOutput, filename) {
     const dataStr = "data:text/JSON;charset=utf-8," + encodeURIComponent(formOutput)
     const downloadAnchorNode = document.createElement('a')
+    if (filename === '') {filename = 'DnD Character'}
     downloadAnchorNode.setAttribute("href", dataStr)
     downloadAnchorNode.setAttribute("download", filename + ".json")
     document.body.appendChild(downloadAnchorNode) //firefox proofing
