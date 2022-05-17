@@ -17,6 +17,7 @@ My commits and merges will have special characters to help identify new, removed
 
 1. **_Downloadable form_**
   - ~~Create form~~
+  - ~~Have form downloadable~~
   - Implement dynamic form fields
   - Have dynamic form downloadable
 
