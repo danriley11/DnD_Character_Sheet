@@ -15,7 +15,10 @@ My commits and merges will have special characters to help identify new, removed
 
 **Goals:**
 
-1. ~~**_Downloadable form_**~~
+1. **_Downloadable form_**
+  - ~~Create form~~
+  - Implement dynamic form fields
+  - Have dynamic form downloadable
 
 2. **_Populate form_** via file upload
 
