@@ -14,12 +14,12 @@ My commits and merges will have special characters to help identify new, removed
 `"~" : What will be done in the next commit`
 
 **Goals:**
+https://trello.com/b/Eg0QRrEV/dnd-project
 
 1. **_Downloadable form_**
   - ~~Create form~~
   - ~~Have form downloadable~~
   - Implement dynamic form fields
-  - Have dynamic form downloadable
 
 2. **_Populate form_** via file upload
 
