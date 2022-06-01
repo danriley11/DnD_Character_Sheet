@@ -9,8 +9,6 @@ function UploadForm() {
     setIsSelected(true);
   };
 
-  const handleSubmission = () => {};
-
   return (
     <div>
       <input type="file" name="file" onChange={changeHandler} />
@@ -24,11 +22,6 @@ function UploadForm() {
       ) : (
         <p>Select a file to show details</p>
       )}
-      <div>
-        <button type="submit" onClick={handleSubmission}>
-          Submit
-        </button>
-      </div>
     </div>
   );
 }
