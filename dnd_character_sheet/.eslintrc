@@ -4,5 +4,8 @@
     "browser": true
   },
   "extends": "airbnb",
-  "rules": {}
+  "rules": {
+    "comma-dangle": "warn",
+    "react/jsx-one-expression-per-line": "warn"
+  }
 }
