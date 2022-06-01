@@ -2,18 +2,17 @@ import React from 'react';
 
 import './styles/App.css';
 
+import UploadForm from './functions/uploadForm';
 import MeleeAttackForm from './components/meleeAttack';
-
-import handleFormSubmit from './functions/form';
+import DownloadForm from './functions/downloadForm';
 
 function App() {
   return (
     <>
-      <form id="test">
+      <form id="DnDForm">
+        <UploadForm />
         <MeleeAttackForm />
-        <button type="submit" onClick={(e) => handleFormSubmit(e)}>
-          Download
-        </button>
+        <DownloadForm />
       </form>
 
       <div className="results">
