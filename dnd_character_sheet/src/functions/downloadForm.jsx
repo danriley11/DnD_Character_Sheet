@@ -1,31 +1,41 @@
-export default function handleFormSubmit(event) {
-  event.preventDefault();
+import React from 'react';
 
-  const data = new FormData(document.getElementById('test'));
+function DownloadForm(e) {
+  function handleFormSubmit(event) {
+    event.preventDefault();
 
-  const formJSON = Object.fromEntries(data.entries());
+    const data = new FormData(document.getElementById('test'));
 
-  // for multi-selects, we need special handling
-  // formJSON.snacks = data.getAll('snacks');
+    const formJSON = Object.fromEntries(data.entries());
 
-  // convert from inputs and outputs to clean innerText
-  const results = document.querySelector('.results pre');
-  results.innerText = JSON.stringify(formJSON, null, 2);
+    // for multi-selects, we need special handling
+    // formJSON.snacks = data.getAll('snacks');
 
-  // console.log(results.innerText)
-  const formOutput = results.innerText;
-  console.log(formOutput);
+    // convert from inputs and outputs to clean innerText
+    const results = document.querySelector('.results pre');
+    results.innerText = JSON.stringify(formJSON, null, 2);
 
-  function downloadFormContent() {
-    const dataStr = `data:text/JSON;charset=utf-8,${encodeURIComponent(formOutput)}`;
-    const downloadAnchorNode = document.createElement('a');
-    let filename = formJSON.name;
-    downloadAnchorNode.setAttribute('href', dataStr);
-    downloadAnchorNode.setAttribute('download', (filename = undefined ? `${filename}.json` : 'DnD Character'));
-    document.body.appendChild(downloadAnchorNode); // firefox proofing
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
+    // console.log(results.innerText)
+    const formOutput = results.innerText;
+    console.log(formOutput);
+
+    function downloadFormContent() {
+      const dataStr = `data:text/JSON;charset=utf-8,${encodeURIComponent(formOutput)}`;
+      const downloadAnchorNode = document.createElement('a');
+      let filename = formJSON.name;
+      downloadAnchorNode.setAttribute('href', dataStr);
+      downloadAnchorNode.setAttribute('download', (filename = undefined ? `${filename}.json` : 'DnD Character'));
+      document.body.appendChild(downloadAnchorNode); // firefox proofing
+      downloadAnchorNode.click();
+      downloadAnchorNode.remove();
+    }
+
+    downloadFormContent(formOutput, formJSON.name); // this will hold name of download
   }
-
-  downloadFormContent(formOutput, formJSON.name); // this will hold name of download
+  return (
+    <button type="submit" onClick={() => handleFormSubmit(e)}>
+      Download
+    </button>
+  );
 }
+export default DownloadForm;
