@@ -1,10 +1,8 @@
 import React from 'react';
 
 function DownloadForm(e) {
-  function handleFormSubmit(event) {
-    event.preventDefault();
-
-    const data = new FormData(document.getElementById('test'));
+  function handleFormSubmit() {
+    const data = new FormData(document.getElementById('DnDForm'));
 
     const formJSON = Object.fromEntries(data.entries());
 
@@ -24,7 +22,10 @@ function DownloadForm(e) {
       const downloadAnchorNode = document.createElement('a');
       let filename = formJSON.name;
       downloadAnchorNode.setAttribute('href', dataStr);
-      downloadAnchorNode.setAttribute('download', (filename = undefined ? `${filename}.json` : 'DnD Character'));
+      downloadAnchorNode.setAttribute(
+        'download',
+        (filename = undefined ? `${filename}.json` : 'DnD Character.json'),
+      );
       document.body.appendChild(downloadAnchorNode); // firefox proofing
       downloadAnchorNode.click();
       downloadAnchorNode.remove();
@@ -32,10 +33,6 @@ function DownloadForm(e) {
 
     downloadFormContent(formOutput, formJSON.name); // this will hold name of download
   }
-  return (
-    <button type="submit" onClick={() => handleFormSubmit(e)}>
-      Download
-    </button>
-  );
+  return <input type="submit" onClick={() => handleFormSubmit(e)} value="Download" />;
 }
 export default DownloadForm;
