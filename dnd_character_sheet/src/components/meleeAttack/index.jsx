@@ -128,8 +128,18 @@ function MeleeAttackForm() {
         </tbody>
       </table>
       <div>
-        <input className="addAttack" onClick={() => addMeleeAttack()} type="button" value="Add New Attack" />
-        <input className="removeAttack" onClick={() => removeMeleeAttack()} type="button" value="Remove Last" />
+        <input
+          className="addAttack"
+          onClick={() => addMeleeAttack()}
+          type="button"
+          value="Add New Attack"
+        />
+        <input
+          className="removeAttack"
+          onClick={() => removeMeleeAttack()}
+          type="button"
+          value="Remove Last"
+        />
       </div>
     </div>
   );
