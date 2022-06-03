@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 
 function MeleeAttackForm() {
   const blankMeleeAttack = {
-    AttackID: 0,
     AttackName: '',
     AttackToHit: 0,
     AttackDamage: '',
@@ -63,13 +62,12 @@ function MeleeAttackForm() {
         </thead>
         <tbody>
           {meleeAttackState.map((element, index) => {
-            const AttackId = `AttackId[${index}]`;
             const AttackNameId = `AttackName[${index}]`;
             const AttackToHitId = `AttackToHit[${index}]`;
             const AttackDamageId = `AttackDamage[${index}]`;
 
             return (
-              <tr key={AttackId}>
+              <tr key={index}>
                 <td>
                   <input
                     // onClick={}
@@ -128,8 +126,18 @@ function MeleeAttackForm() {
         </tbody>
       </table>
       <div>
-        <input className="addAttack" onClick={() => addMeleeAttack()} type="button" value="Add New Attack" />
-        <input className="removeAttack" onClick={() => removeMeleeAttack()} type="button" value="Remove Last" />
+        <input
+          className="addAttack"
+          onClick={() => addMeleeAttack()}
+          type="button"
+          value="Add New Attack"
+        />
+        <input
+          className="removeAttack"
+          onClick={() => removeMeleeAttack()}
+          type="button"
+          value="Remove Last"
+        />
       </div>
     </div>
   );
