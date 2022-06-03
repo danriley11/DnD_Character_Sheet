@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-// import meleeAttack from "../../functions/attack";
 
 // import '../../styles/xyz.css'
 
-function MeleeAttackForm() {
+import createMeleeAttack from './newMeleeAttack';
+
+export default function MeleeAttackForm() {
   const blankMeleeAttack = {
     AttackID: 0,
     AttackName: '',
@@ -14,12 +15,6 @@ function MeleeAttackForm() {
   const [meleeAttackState, setMeleeAttackState] = useState(() => [{ ...blankMeleeAttack }]);
 
   const addMeleeAttack = () => {
-    // const updatedMeleeAttacksArray = [...meleeAttackState];
-    // let updatedMeleeAttacksArray = [
-    //   ...meleeAttackState.splice(0, 0, { ...blankMeleeAttack }),
-    // ];
-    // updatedMeleeAttacksArray.splice(0, 0, { ...blankMeleeAttack });
-    // setMeleeAttackState([...updatedMeleeAttacksArray]);
     setMeleeAttackState([...meleeAttackState, { ...blankMeleeAttack }]);
   };
 
@@ -52,6 +47,9 @@ function MeleeAttackForm() {
 
   return (
     <div className="input-group" id="MeleeAttack">
+      <label>
+        <h3>Melee Attack</h3>
+      </label>
       <table>
         <thead>
           <tr>
@@ -62,77 +60,25 @@ function MeleeAttackForm() {
           </tr>
         </thead>
         <tbody>
-          {meleeAttackState.map((element, index) => {
-            const AttackId = `AttackId[${index}]`;
-            const AttackNameId = `AttackName[${index}]`;
-            const AttackToHitId = `AttackToHit[${index}]`;
-            const AttackDamageId = `AttackDamage[${index}]`;
-
-            return (
-              <tr key={AttackId}>
-                <td>
-                  <input
-                    // onClick={}
-                    id="RollAttack"
-                    name="RollAttack"
-                    type="button"
-                    value="roll"
-                  />
-                </td>
-                <td>
-                  <input
-                    // value={meleeAttackState[index].AttackName}
-                    className="attackName"
-                    data-index={index}
-                    id={AttackNameId}
-                    name={AttackNameId}
-                    onChange={(e) => handleMeleeAttackChange(e)}
-                    type="text"
-                  />
-                </td>
-                <td>
-                  <input
-                    // value={meleeAttackState[index].AttackToHit}
-                    className="attackToHit"
-                    data-index={index}
-                    id={AttackToHitId}
-                    name={AttackToHitId}
-                    onChange={(e) => handleMeleeAttackChange(e)}
-                    type="number"
-                  />
-                </td>
-                <td>
-                  <input
-                    // value={meleeAttackState[index].AttackDamage}
-                    className="attackDamage"
-                    data-index={index}
-                    id={AttackDamageId}
-                    name={AttackDamageId}
-                    onChange={handleMeleeAttackChange}
-                    type="text"
-                  />
-                </td>
-                <td>
-                  {/* Ideal: have rows uniquely removed
-                  <input
-                    className="removeAttack"
-                    name="removeAttack"
-                    onClick={() => removeMeleeAttack()}
-                    type="button"
-                    value="Remove"
-                  /> */}
-                </td>
-              </tr>
-            );
-          })}
+          {meleeAttackState.map((element, index) =>
+            createMeleeAttack(index, handleMeleeAttackChange),
+          )}
         </tbody>
       </table>
       <div>
-        <input className="addAttack" onClick={() => addMeleeAttack()} type="button" value="Add New Attack" />
-        <input className="removeAttack" onClick={() => removeMeleeAttack()} type="button" value="Remove Last" />
+        <input
+          className="addAttack"
+          onClick={() => addMeleeAttack()}
+          type="button"
+          value="Add New Attack"
+        />
+        <input
+          className="removeAttack"
+          onClick={() => removeMeleeAttack()}
+          type="button"
+          value="Remove Last"
+        />
       </div>
     </div>
   );
 }
-
-export default MeleeAttackForm;
