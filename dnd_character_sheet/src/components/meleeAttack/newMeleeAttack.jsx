@@ -1,18 +1,21 @@
 import React from 'react';
 
-export default function createMeleeAttack(index, handleMeleeAttackChange) {
+export default function createMeleeAttack(index, handleMeleeAttackChange, removeMeleeAttack) {
   // const AttackId = `AttackId[${index}]`;
-  const AttackNameId = `AttackName[${index}]`;
-  const AttackToHitId = `AttackToHit[${index}]`;
-  const AttackDamageId = `AttackDamage[${index}]`;
+  const MeleeNameId = `MeleeName[${index}]`;
+  const MeleeToHitId = `MeleeToHit[${index}]`;
+  const MeleeDamageId = `MeleeDamage[${index}]`;
+  const MeleeRollId = `MeleeRoll[${index}]`;
 
   return (
     <tr key={index}>
       <td>
         <input
           // onClick={}
-          id="RollAttack"
-          name="RollAttack"
+          className="MeleeRoll"
+          data-index={index}
+          id={MeleeRollId}
+          name={MeleeRollId}
           type="button"
           value="roll"
         />
@@ -20,10 +23,10 @@ export default function createMeleeAttack(index, handleMeleeAttackChange) {
       <td>
         <input
           // value={meleeAttackState[index].AttackName}
-          className="attackName"
+          className="MeleeName"
           data-index={index}
-          id={AttackNameId}
-          name={AttackNameId}
+          id={MeleeNameId}
+          name={MeleeNameId}
           onChange={(e) => handleMeleeAttackChange(e)}
           type="text"
         />
@@ -31,10 +34,10 @@ export default function createMeleeAttack(index, handleMeleeAttackChange) {
       <td>
         <input
           // value={meleeAttackState[index].AttackToHit}
-          className="attackToHit"
+          className="MeleeToHit"
           data-index={index}
-          id={AttackToHitId}
-          name={AttackToHitId}
+          id={MeleeToHitId}
+          name={MeleeToHitId}
           onChange={(e) => handleMeleeAttackChange(e)}
           type="number"
         />
@@ -42,23 +45,23 @@ export default function createMeleeAttack(index, handleMeleeAttackChange) {
       <td>
         <input
           // value={meleeAttackState[index].AttackDamage}
-          className="attackDamage"
+          className="MeleeDamage"
           data-index={index}
-          id={AttackDamageId}
-          name={AttackDamageId}
+          id={MeleeDamageId}
+          name={MeleeDamageId}
           onChange={handleMeleeAttackChange}
           type="text"
         />
       </td>
       <td>
         {/* Ideal: have rows uniquely removed */}
-        {/* <input
+        <input
           className="removeAttack"
           name="removeAttack"
           onClick={() => removeMeleeAttack(index)}
           type="button"
           value="Remove"
-        /> */}
+        />
       </td>
     </tr>
   );

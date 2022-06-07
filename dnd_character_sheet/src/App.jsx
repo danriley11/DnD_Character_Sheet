@@ -5,6 +5,7 @@ import './styles/App.css';
 import UploadForm from './functions/uploadForm';
 import MeleeAttackForm from './components/meleeAttack';
 import DownloadForm from './functions/downloadForm';
+import SpellAttackForm from './components/spellAttack';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <form id="DnDForm">
         <UploadForm />
         <MeleeAttackForm />
+        <SpellAttackForm />
         <DownloadForm />
       </form>
 

@@ -6,10 +6,10 @@ import createMeleeAttack from './newMeleeAttack';
 
 export default function MeleeAttackForm() {
   const blankMeleeAttack = {
-    AttackID: 0,
-    AttackName: '',
-    AttackToHit: 0,
-    AttackDamage: '',
+    MeleeID: 0,
+    MeleeName: '',
+    MeleeToHit: 0,
+    MeleeDamage: '',
   };
 
   const [meleeAttackState, setMeleeAttackState] = useState(() => [{ ...blankMeleeAttack }]);
@@ -30,8 +30,8 @@ export default function MeleeAttackForm() {
     //   meleeAttackState.filter(() => index !== 0);
     // });
 
-    const tempMeleeAttackState = meleeAttackState;
-    tempMeleeAttackState.splice([index], 1);
+    const tempMeleeAttackState = [...meleeAttackState];
+    tempMeleeAttackState.splice(index, 1);
     setMeleeAttackState([...tempMeleeAttackState]);
     console.log(index);
 
@@ -46,9 +46,9 @@ export default function MeleeAttackForm() {
   };
 
   return (
-    <div className="input-group" id="MeleeAttack">
+    <div className="melee-input-group" id="MeleeAttack">
       <label>
-        <h3>Melee Attack</h3>
+        <h3>Melee Attack(s)</h3>
       </label>
       <table>
         <thead>
@@ -61,7 +61,7 @@ export default function MeleeAttackForm() {
         </thead>
         <tbody>
           {meleeAttackState.map((element, index) =>
-            createMeleeAttack(index, handleMeleeAttackChange),
+            createMeleeAttack(index, handleMeleeAttackChange, removeMeleeAttack),
           )}
         </tbody>
       </table>
