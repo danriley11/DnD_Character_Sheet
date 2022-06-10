@@ -2,6 +2,7 @@ import React from 'react';
 
 import './styles/App.css';
 
+import NavBar from './components/navBar/NavBar';
 import UploadForm from './functions/uploadForm';
 import MeleeAttackForm from './components/meleeAttack';
 import DownloadForm from './functions/downloadForm';
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <form id="DnDForm">
+        <NavBar />
         <UploadForm />
         <MeleeAttackForm />
         <SpellAttackForm />

@@ -1,0 +1,76 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(149, 149, 149, 0.422);
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+/* primary section */
+header {
+  display: -webkit-box;
+  display: flex;
+  align-content: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+}
+
+header section.characterName {
+  border: 1px solid black;
+  border-right: 0;
+  border-radius: 10px 0 0 10px;
+  padding: 5px 0;
+  background-color: #ddd;
+  width: 30%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  flex-direction: column-reverse;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+header section.characterName input {
+  padding: 0.5em;
+  margin: 5px;
+  border: 0;
+}
+
+header section.characterName label {
+  padding-left: 1em;
+}
+/* secondary section */
+
+.misc {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  flex-direction: column-reverse;
+  background-color: #ddd;
+}
