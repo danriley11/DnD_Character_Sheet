@@ -7,7 +7,7 @@ function Header() {
         <label htmlFor="characterName">Character Name</label>
         <input name="characterName" id="characterName" placeholder="Character Name" />
       </section>
-      <section className="misc">
+      <section className="characterContext">
         <ul>
           <li>
             <label htmlFor="classLevel">

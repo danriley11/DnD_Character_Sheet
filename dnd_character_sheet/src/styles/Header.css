@@ -1,21 +1,29 @@
+a:link {
+  /* text-decoration: none; */
+
+  background-color: #ddd;
+  color: rgb(255, 133, 52);
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(149, 149, 149, 0.422);
+  background-color: #ddd;
 }
 
 li {
   float: left;
-  border-right: 1px solid #bbb;
 }
 
 li a {
-  display: block;
-  color: white;
+  color: #767978;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -34,6 +42,8 @@ header {
   align-content: stretch;
   -webkit-box-align: stretch;
   align-items: stretch;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 header section.characterName {
@@ -42,7 +52,7 @@ header section.characterName {
   border-radius: 10px 0 0 10px;
   padding: 5px 0;
   background-color: #ddd;
-  width: 30%;
+  /* width: 30%; */
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -51,26 +61,62 @@ header section.characterName {
   bottom: 0;
   top: 0;
   margin: auto;
+  height: 60%;
 }
 
 header section.characterName input {
   padding: 0.5em;
   margin: 5px;
   border: 0;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 header section.characterName label {
   padding-left: 1em;
+  margin-top: -1rem;
 }
 /* secondary section */
 
-.misc {
+.characterContext {
+  /* width: 70%; */
   border: 1px solid black;
   border-radius: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 10px;
+  /* background-color: white; */
+  background-color: #ddd;
+  opacity: 0.9;
+}
+
+.characterContext ul {
+  padding: 10px 0px 5px 0px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.characterContext ul li {
+  width: 33.33333%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   flex-direction: column-reverse;
-  background-color: #ddd;
+}
+
+.characterContext ul li label {
+  margin-bottom: 5px;
+  text-indent: 7px;
+  font-size: 14px;
+}
+
+.characterContext ul li input {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  border-radius: 10px;
+  text-indent: 4px;
+  margin-right: 5px;
 }
