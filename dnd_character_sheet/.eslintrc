@@ -6,6 +6,9 @@
   "extends": "airbnb",
   "rules": {
     "comma-dangle": "warn",
-    "react/jsx-one-expression-per-line": "warn"
+    "react/jsx-one-expression-per-line": "warn",
+    "implicit-arrow-linebreak": "warn",
+    "function-paren-newline": "warn",
+    "jsx-a11y/label-has-associated-control": 0
   }
 }
