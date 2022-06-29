@@ -1,0 +1,33 @@
+.attributeScoresContainer {
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 17%;
+}
+
+.nestedScores {
+  flex: 100%;
+  text-align: center;
+}
+
+.modifierButton {
+  color: red;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.attributeModifier {
+  border: 1px solid black;
+  padding: 9%;
+}
+
+.attributeScore {
+  border-radius: 15px;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 10%;
+  position: relative;
+}

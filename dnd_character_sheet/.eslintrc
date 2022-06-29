@@ -9,6 +9,8 @@
     "react/jsx-one-expression-per-line": "warn",
     "implicit-arrow-linebreak": "warn",
     "function-paren-newline": "warn",
-    "jsx-a11y/label-has-associated-control": 0
+    "jsx-a11y/label-has-associated-control": 0,
+    "react/prop-types": "warn",
+    "react/default-props-match-prop-types": "warn"
   }
 }
