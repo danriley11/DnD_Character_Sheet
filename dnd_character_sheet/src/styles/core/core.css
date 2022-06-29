@@ -1,0 +1,4 @@
+.coreContainer {
+  display: flex;
+  flex-wrap: wrap;
+}

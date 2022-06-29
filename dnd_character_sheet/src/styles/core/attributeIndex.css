@@ -1,0 +1,6 @@
+.attributesContainer {
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  width: 90%;
+  margin: 5%;
+}

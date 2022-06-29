@@ -4,18 +4,21 @@ import './styles/App.css';
 
 import NavBar from './components/navBar/NavBar';
 import UploadForm from './functions/uploadForm';
-import MeleeAttackForm from './components/combat/meleeAttack';
 import DownloadForm from './functions/downloadForm';
-import SpellAttackForm from './components/combat/spellAttack';
+import Core from './components/core/coreIndex';
+import Combat from './components/combat/combatIndex';
 
 function App() {
   return (
     <>
       <form id="DnDForm">
-        <NavBar />
         <UploadForm />
-        <MeleeAttackForm />
-        <SpellAttackForm />
+        <NavBar />
+        <Core />
+        <Combat />
+        {/* <Inventory /> */}
+        {/* <Context /> */}
+        {/* <Notes /> */}
         <DownloadForm />
       </form>
 
