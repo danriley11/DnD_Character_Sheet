@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import '../../../styles/core/attributeIndex.css';
+import '../../../styles/core/attributes/attributeIndex.css';
 import AttributeSaves from './saves/attributeSaves';
 import AttributeScores from './scores/attributeScores';
 

@@ -1,0 +1,33 @@
+.heroResourceBox {
+  border: 1px solid grey;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: min-content;
+  margin: 8px;
+}
+.heroResourceBoxInputs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+}
+.heroResourceContainer {
+  text-align: center;
+}
+.heroResourceInput {
+  width: 40%;
+  background: white;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.heroResourceType {
+  width: fit-content;
+}
+.heroResourceRoll {
+  width: fit-content;
+  border-radius: 15px;
+}

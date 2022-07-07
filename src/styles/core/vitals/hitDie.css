@@ -1,0 +1,33 @@
+.hitDiceBox {
+  border: 1px solid grey;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: min-content;
+  margin: 8px;
+}
+.hitDiceBoxInputs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+}
+.hitDieContainer {
+  text-align: center;
+}
+.hitDieInput {
+  width: 40%;
+  background: white;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.diceType {
+  width: fit-content;
+}
+.hitDiceRoll {
+  width: fit-content;
+  border-radius: 15px;
+}

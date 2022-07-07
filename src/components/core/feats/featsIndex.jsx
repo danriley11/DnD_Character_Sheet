@@ -1,13 +1,17 @@
 import React from 'react';
 
-function Feats() {
+import Attunements from './attunements';
+import Factors from './factors';
+import Feats from './feats';
+
+function FeatsIndex() {
   return (
     <div className="featsContainer">
-      {/* <attunements /> */}
-      {/* <factors /> */}
-      {/* <feats /> */}
+      <Attunements />
+      <Factors />
+      <Feats />
     </div>
   );
 }
 
-export default Feats;
+export default FeatsIndex;

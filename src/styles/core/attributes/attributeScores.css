@@ -4,7 +4,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: fit-content;
-  width: 17%;
+  width: min-content;
+  border-radius: 15px;
 }
 
 .nestedScores {
@@ -27,6 +28,7 @@
 
 .attributeScore {
   border-radius: 15px;
+  border: 1px solid black;
   width: 20%;
   text-align: center;
   margin-bottom: 10%;

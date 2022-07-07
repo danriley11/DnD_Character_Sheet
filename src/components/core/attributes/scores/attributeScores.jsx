@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '../../../../styles/core/attributeScores.css';
+import '../../../../styles/core/attributes/attributeScores.css';
 
 function AttributeScores({
   strengthMod,

@@ -1,7 +1,7 @@
 // Proficiency bonus, saving throws, skill checks
 import React from 'react';
 
-import '../../../../styles/core/attributeSaves.css';
+import '../../../../styles/core/attributes/attributeSaves.css';
 
 function AttributeSaves({
   strengthMod,

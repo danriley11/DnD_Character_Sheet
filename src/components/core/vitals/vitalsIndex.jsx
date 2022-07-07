@@ -1,9 +1,11 @@
 import React from 'react';
 
+import VitalsMain from './vitals';
+
 function Vitals() {
   return (
     <div className="vitalsContainer">
-      {/* <vitals /> */}
+      <VitalsMain />
       {/* <hitDice /> */}
       {/* <heroResources /> */}
     </div>

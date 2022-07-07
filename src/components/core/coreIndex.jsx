@@ -3,7 +3,7 @@ import React from 'react';
 import '../../styles/core/core.css';
 
 import Attributes from './attributes/attributeIndex';
-import Feats from './feats/featsIndex';
+import FeatsIndex from './feats/featsIndex';
 import Vitals from './vitals/vitalsIndex';
 
 function Core() {
@@ -11,7 +11,7 @@ function Core() {
     <div className="coreContainer">
       <Attributes />
       <Vitals />
-      <Feats />
+      <FeatsIndex />
     </div>
   );
 }
