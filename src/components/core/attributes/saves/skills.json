@@ -1,0 +1,58 @@
+{
+  "skills": [
+    {
+      "label": "Acrobatics"
+    },
+    {
+      "label": "Animal Handling"
+    },
+    {
+      "label": "Arcana"
+    },
+    {
+      "label": "Athletics"
+    },
+    {
+      "label": "Deception"
+    },
+    {
+      "label": "History"
+    },
+    {
+      "label": "Insight"
+    },
+    {
+      "label": "Intimidation"
+    },
+    {
+      "label": "Investigation"
+    },
+    {
+      "label": "Medicine"
+    },
+    {
+      "label": "Nature"
+    },
+    {
+      "label": "Perception"
+    },
+    {
+      "label": "Performance"
+    },
+    {
+      "label": "Persuasion"
+    },
+    {
+      "label": "Religion"
+    },
+    {
+      "label": "Sleight of Hand"
+    },
+    {
+      "label": "Stealth"
+    },
+    {
+      "label": "Survival"
+    }
+  ]
+}

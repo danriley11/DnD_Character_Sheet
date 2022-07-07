@@ -1,0 +1,22 @@
+{
+  "saves": [
+    {
+      "label": "Strength"
+    },
+    {
+      "label": "Dexterity"
+    },
+    {
+      "label": "Constitution"
+    },
+    {
+      "label": "Intelligence"
+    },
+    {
+      "label": "Wisdom"
+    },
+    {
+      "label": "Charisma"
+    }
+  ]
+}

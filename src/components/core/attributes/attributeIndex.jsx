@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
 import '../../../styles/core/attributeIndex.css';
-
-import AttributeSaves from './attributeSaves';
-import AttributeScores from './attributeScores';
+import AttributeSaves from './saves/attributeSaves';
+import AttributeScores from './scores/attributeScores';
 
 function Attributes() {
   const [strengthMod, setStrengthMod] = useState('+0');
@@ -29,7 +28,14 @@ function Attributes() {
         charismaMod={charismaMod}
         setCharismaMod={setCharismaMod}
       />
-      <AttributeSaves />
+      <AttributeSaves
+        strengthMod={strengthMod}
+        dexterityMod={dexterityMod}
+        constitutionMod={constitutionMod}
+        intelligenceMod={intelligenceMod}
+        wisdomMod={wisdomMod}
+        charismaMod={charismaMod}
+      />
       {/* <attributesPassive /> */}
       {/* <proficiencies /> */}
     </div>

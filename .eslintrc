@@ -8,9 +8,11 @@
     "comma-dangle": "warn",
     "react/jsx-one-expression-per-line": "warn",
     "implicit-arrow-linebreak": "warn",
+    "no-unused-vars": "warn",
     "function-paren-newline": "warn",
     "jsx-a11y/label-has-associated-control": 0,
     "react/prop-types": "warn",
-    "react/default-props-match-prop-types": "warn"
+    "react/default-props-match-prop-types": "warn",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx", ".ts", ".jsx", ".js"] }]
   }
 }
