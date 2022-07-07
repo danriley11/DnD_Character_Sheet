@@ -11,7 +11,7 @@ function createNewHitDie(index) {
   return (
     <div className="hitDiceBox" id={HitDiceId}>
       <div className="hitDiceBoxInputs">
-        <div className="hitDieContainer">
+        <div className="hitDiceContainer">
           <input className="hitDieInput" id={HitDiceCurrentId} type="number" placeholder="0" />
           /
           <input className="hitDieInput" id={HitDiceMaxId} type="number" placeholder="0" />
