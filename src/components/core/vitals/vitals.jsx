@@ -8,7 +8,7 @@ import HeroResource from './heroResource/heroResources';
 
 function VitalsMain() {
   return (
-    <div className="vitalsContainer">
+    <div className="innerContainer">
       <div className="combatVitalsContainer">
         <div className="smallVital" id="ArmorClass">
           AC

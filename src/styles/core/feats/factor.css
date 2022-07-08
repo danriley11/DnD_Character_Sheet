@@ -1,0 +1,59 @@
+.factorsContainer {
+  border: 1px solid grey;
+  background-color: rgb(201, 201, 201);
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.subHeaderButton {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  text-align: center;
+  margin-left: 9%;
+}
+
+.factorBox {
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 8px;
+}
+.factorBoxInputs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: stretch;
+  /* box-sizing: content-box; */
+  width: max-content;
+}
+.factorContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.factorTypeContainer {
+  margin: 15% 0 0 5%;
+  width: 100%;
+  text-align: end;
+}
+.factorTextContainer {
+  margin: 5% 5% 0 3%;
+  text-align: start;
+}
+.factorType {
+  border-radius: 15px 0 0 15px;
+  padding-left: 5%;
+}
+.factorText {
+  border-radius: 5px 15px 15px 5px;
+  width: 296px;
+  height: 32px;
+}

@@ -1,7 +1,9 @@
 .coreContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
   flex: 3, 1;
-  background-color: brown;
+  background-color: rgba(231, 231, 231, 0.25);
   width: 1fr 1fr 1fr;
+  margin: 2%;
 }

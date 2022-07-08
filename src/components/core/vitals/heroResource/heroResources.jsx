@@ -20,7 +20,7 @@ function HeroResource() {
 
   return (
     <div className="heroResourcesContainer">
-      <div className="subHeaderButton">
+      <div className="headerButton">
         <label className="subHeader">Hero Resource</label>
         <input className="addNewButton" type="button" value="+" onClick={() => addHeroResource()} />
       </div>

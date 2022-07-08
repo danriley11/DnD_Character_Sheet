@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 import '../../../styles/core/attributes/attributeIndex.css';
+import '../../../styles/core/common.css';
+
 import AttributeSaves from './saves/attributeSaves';
 import AttributeScores from './scores/attributeScores';
 
@@ -13,7 +15,7 @@ function Attributes() {
   const [charismaMod, setCharismaMod] = useState('+0');
 
   return (
-    <div className="attributesContainer">
+    <div className="outerContainer">
       <AttributeScores
         strengthMod={strengthMod}
         setStrengthMod={setStrengthMod}

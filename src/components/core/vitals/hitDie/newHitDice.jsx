@@ -9,7 +9,7 @@ function createNewHitDie(index) {
   const HitDiceTypeId = `HitDiceType[${index}]`;
 
   return (
-    <div className="hitDiceBox" id={HitDiceId}>
+    <div className="hitDiceBox" key={HitDiceId}>
       <div className="hitDiceBoxInputs">
         <div className="hitDiceContainer">
           <input className="hitDieInput" id={HitDiceCurrentId} type="number" placeholder="0" />

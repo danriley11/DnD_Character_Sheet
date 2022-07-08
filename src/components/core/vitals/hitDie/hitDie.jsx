@@ -21,7 +21,7 @@ function HitDie() {
 
   return (
     <div className="hitDieContainer">
-      <div className="subHeaderButton">
+      <div className="headerButton">
         <label className="subHeader">Hit Dice</label>
         <input className="addNewButton" type="button" value="+" onClick={() => addHitDie()} />
       </div>

@@ -1,10 +1,9 @@
 .vitalsContainer {
-  background-color: rgb(255, 0, 100);
+  background-color: rgba(231, 231, 231, 0.556);
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   width: 1fr;
-  margin: 5%;
 }
 
 .combatVitalsContainer {
@@ -50,6 +49,7 @@
   background-color: rgb(201, 201, 201);
   justify-content: center;
   padding-bottom: 10px;
+  margin-bottom: 5%;
 }
 .subHeaderButton {
   width: 100%;
@@ -61,11 +61,6 @@
   width: 100%;
   margin-left: 12%;
   text-align: center;
-}
-.addNewButton {
-  width: fit-content;
-  border-radius: 15px;
-  margin-left: 26px;
 }
 
 .heroResourcesContainer {

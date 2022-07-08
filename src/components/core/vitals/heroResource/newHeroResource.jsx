@@ -10,7 +10,7 @@ function createNewHeroResource(index) {
   const HeroResourceTitleId = `HeroResourceTitle[${index}]`;
 
   return (
-    <div className="heroResourceBox" id={HeroResourceId}>
+    <div className="heroResourceBox" key={HeroResourceId}>
       <div className="heroResourceBoxInputs">
         <div className="heroResourceContainer">
           <input
